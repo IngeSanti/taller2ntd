@@ -3,68 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equipo</title>
+    <title>Facebook</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-
 <body>
+
     <div class="sidebar">
-        
         <h2><i class="icon-user"></i> Equipo</h2>
-    
     </div>
 
     <div class="container">
-        
         <div id="feed"></div>
 
-        <div id="post-form">
-            <img src="assest/maicols.jpg" alt="maicol santiaago murillo leon">
+        <div class="post-form">
+            <img src="assest/maicols.jpg" alt="maicol santiago murillo leon">
             <p>Maicol Santiago Murillo León</p>
             <p>Estudiante</p>
             <p>Universidad Konrad Lorenz</p>
 
-            <button id="btn-abrir-modal">AGREGAR AMIGO</button>
+            <button class="btn-abrir-modal" data-modal="modal1">Agregar amigo</button>
 
-            <dialog id="modal">
-                <h2>AMIGO AGREGADO</h2>
-                <button id="btn-cerrar-modal">cerrar</button>
-            
+            <dialog id="modal1" class="modal"> 
+                <h1>Amigo agregado</h1>
+                <button class="btn-cerrar-modal">X</button>
             </dialog>
-
-          
-         
-
-
-
         </div>
 
-       
-
-
-        <div id="post-form">
+        <div class="post-form">
             <img src="assest/cata.png" alt="catalina gordillo">
             <p>Catalina Gordillo Peña</p>
             <p>Estudiante</p>
             <p>Universidad Konrad Lorenz</p>
-            <button id="btn-abrir-modal">AGREGAR AMIGO</button>
+
+            <button class="btn-abrir-modal" data-modal="modal2">Agregar amigo</button>
+
+            <dialog id="modal2" class="modal"> 
+                <h1>Amigo agregado</h1>
+                <button class="btn-cerrar-modal">X</button>
+            </dialog>
         </div>
 
-        <div id="post-form">
-            <img src="assest/sara.png" alt="Amigo 3">
+        <div class="post-form">
+            <img src="assest/sara.png" alt="sara murcia">
             <p>Sara Murcia</p>
             <p>Estudiante</p>
             <p>Universidad Konrad Lorenz</p>
-            <button id="btn-abrir-modal">AGREGAR AMIGO</button>
+
+            <button class="btn-abrir-modal" data-modal="modal3">Agregar amigo</button>
+
+            <dialog id="modal3" class="modal">
+                <h1>Amigo agregado</h1>
+                <button class="btn-cerrar-modal">X</button>
+            </dialog>
         </div>
 
 
-        
     </div>
 
+    <script src="js/script.js"></script>
 
-
-    <script src="script.js"></script>
 </body>
 </html>
