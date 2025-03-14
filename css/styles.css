@@ -44,7 +44,17 @@ body {
 }
 
 
-
+.barra {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #f1f1f1; /* Color de fondo de la barra */
+    padding: 10px 0;
+}
+.barra img {
+    margin: 0 15px; /* Espacio entre las imágenes */
+    height: 40px; /* Altura de las imágenes */
+}
 
 .sidebar-right {
     width: 250px;
