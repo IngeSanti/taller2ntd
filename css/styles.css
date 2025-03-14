@@ -79,11 +79,13 @@ body {
 .sidebar-right a:hover {
     background-color: #365899;
 }
+.card {
+    overflow: hidden; 
+}
 
 .card-img-top {
     width: 100%; 
-    height: auto; 
-    max-height: 200px; 
+    height: 200%; 
     object-fit: cover; 
 }
 
