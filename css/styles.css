@@ -52,8 +52,8 @@ body {
     padding: 10px 0;
 }
 .barra img {
-    margin: 0 15px; /* Espacio entre las imágenes */
-    height: 40px; /* Altura de las imágenes */
+    margin: 0 15px; 
+    height: 40px;
 }
 
 .sidebar-right {
@@ -78,6 +78,13 @@ body {
 }
 .sidebar-right a:hover {
     background-color: #365899;
+}
+
+.card-img-top {
+    width: 100%; 
+    height: auto; 
+    max-height: 200px; 
+    object-fit: cover; 
 }
 
 
