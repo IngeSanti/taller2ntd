@@ -16,3 +16,11 @@ function addPost() {
     document.getElementById("new-post").value = "";
     document.getElementById("image-upload").value = "";
 }
+document.getElementById("search-bar").addEventListener("input", function() {
+    let filter = this.value.toLowerCase();
+    let products = document.querySelectorAll(".product-card");
+    products.forEach(product => {
+        let name = product.querySelector("h2").textContent.toLowerCase();
+        product.style.display = name.includes(filter) ? "block" : "none";
+    });
+});
