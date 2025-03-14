@@ -24,3 +24,5 @@ document.getElementById("search-bar").addEventListener("input", function() {
         product.style.display = name.includes(filter) ? "block" : "none";
     });
 });
+
+
