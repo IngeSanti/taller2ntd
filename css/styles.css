@@ -119,7 +119,7 @@ body {
 }
 
 #post-form {
-    background: #22222e;
+    background: #525257;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -147,6 +147,99 @@ textarea, input[type="file"] {
     gap: 10px;
     width: 50%;
 }
+
+/* Contenedor de estadísticas y personas sugeridas */
+.stats-suggestions-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.stats, .suggested-friends {
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+    padding: 15px;
+    background: #525257;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.stats h3, .suggested-friends h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.stats p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #ddd;
+}
+
+/* Estilo de la sección de tendencias */
+.trending-section {
+    background: #525257;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.trending-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.trending-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.trending-section li {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #ddd;
+}
+
+/* Estilos para la sección de personas sugeridas */
+.suggested-friends .friend {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    background: #525257;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.suggested-friends img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.suggested-friends p {
+    flex-grow: 1;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.suggested-friends button {
+    background-color: #551a6a;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.suggested-friends button:hover {
+    background-color: #6b237d;
+}
+
 /*
 .post {
     background: white;
@@ -180,4 +273,60 @@ textarea, input[type="file"] {
 .notification span {
     font-size: 12px;
     color: gray;
+}
+.titulo-principal {
+    color: #551a6a;
+    text-align: center;
+    font-size: 28px;
+}
+
+.titulo-seccion {
+    color: #333;
+    font-size: 24px;
+    border-bottom: 2px solid #551a6a;
+    padding-bottom: 5px;
+}
+/* Contenedor principal de estadísticas */
+.stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    padding: 20px;
+    background: #2C2F33;
+    border-radius: 12px;
+}
+
+/* Caja de cada estadística */
+.stat-box {
+    background: #39093d;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s ease;
+    color: white;
+    border: 1px solid #551a6a;
+}
+
+/* Efecto hover */
+.stat-box:hover {
+    transform: scale(1.05);
+    background: #551a6a;
+}
+
+/* Título de cada estadística */
+.stat-box h3 {
+    color: #f1f1f1;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Valor de cada estadística */
+.stat-box p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ddd;
 }
