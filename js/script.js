@@ -16,3 +16,27 @@ function addPost() {
     document.getElementById("new-post").value = "";
     document.getElementById("image-upload").value = "";
 }
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const abrirBotones = document.querySelectorAll(".btn-abrir-modal");
+    const cerrarBotones = document.querySelectorAll(".btn-cerrar-modal");
+  
+    abrirBotones.forEach((boton) => {
+        boton.addEventListener("click", () => {
+            const modalId = boton.getAttribute("data-modal");
+            const modal = document.getElementById(modalId);
+            if (modal) modal.showModal();
+        });
+    });
+  
+    cerrarBotones.forEach((boton) => {
+        boton.addEventListener("click", () => {
+            const modal = boton.closest("dialog");
+            if (modal) modal.close();
+        });
+    });
+  });
