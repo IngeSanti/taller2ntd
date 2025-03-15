@@ -1,38 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cumpleaños</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
 
     <div class="sidebar">
         <h2>Cumpleaños</h2>
+        <a href="index.html" style="text-decoration: none;">
+            <button type="button">Volver</button>
+        </a>
     </div>
 
     <div class="container">
-        <h1 style="color: cornflowerblue;">Cumpleaños de hoy 🎉</h1>
+        <h1 style="color: #39093d;">Cumpleaños de hoy 🎉</h1>
 
-        <div class="birthday-card">
-            <p><strong>Ana Torres</strong> está de cumpleaños hoy. ¡Envíale un mensaje! 🎂</p>
-            <button class="send-message">Enviar felicitación</button>
+        <div class="card text-center" style="margin-bottom: 30px; ">
+            <div class="card-header">
+                <strong>Ana Torres</strong>
+            </div>
+            <div class="card-body">
+                <p  class="card-text"><strong>Ana Torres</strong> está de cumpleaños hoy. ¡Envíale un mensaje! 🎂</p>
+                <button class="send-message">Enviar felicitación</button>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="card-header">
+                <strong>Carlos Rodríguez</strong>
+            </div>
+            <div class="card-body">
+                <p  class="card-text"><strong>Carlos Rodríguez</strong> cumple años hoy. 🎈</p>
+                <button class="send-message">Enviar felicitación</button>
+            </div>
         </div>
 
-        <div class="birthday-card">
-            <p><strong>Carlos Rodríguez</strong> cumple años hoy. 🎈</p>
-            <button class="send-message">Enviar felicitación</button>
+        <div class="card text-center">
+            <div class="card-header">
+                <strong>María López</strong>
+            </div>
+            <div class="card-body">
+                <p  class="card-text"><strong>María López</strong> celebra su cumpleaños. 🎁</p>
+                <button class="send-message">Enviar felicitación</button>
+            </div>
         </div>
+    </div>
 
-        <div class="birthday-card">
-            <p><strong>María López</strong> celebra su cumpleaños. 🎁</p>
-            <button class="send-message">Enviar felicitación</button>
-        </div>
-
-    </div> 
-
-    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>
