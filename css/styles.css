@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .sidebar, .sidebar-right {
@@ -330,3 +330,4 @@ textarea, input[type="file"] {
     font-weight: bold;
     color: #ddd;
 }
+
