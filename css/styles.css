@@ -1,18 +1,22 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #2C2F33;
+    background: linear-gradient(to right, #1e1e2e, #2C2F33);
     margin: 0;
     padding: 0;
     display: flex;
+    color: white;
 }
 
 .sidebar, .sidebar-right {
-    width: 250px;
+    width: 220px;
     background-color: #39093d;
     color: white;
     position: fixed;
     height: 100%;
-    padding-top: 20px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sidebar {
@@ -26,19 +30,37 @@ body {
 
 .sidebar h2, .sidebar-right h2 {
     text-align: center;
+    margin-bottom: 15px;
+    font-size: 22px;
 }
+
 
 .sidebar a, .sidebar-right a {
     display: block;
     color: white;
-    padding: 10px;
+    padding: 12px;
     text-decoration: none;
-    margin: 5px;
+    margin: 5px 0;
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+    transition: background 0.3s;
 }
 
 .sidebar a:hover, .sidebar-right a:hover {
-    background-color: #39093d;
+    background-color: #551a6a;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 460px);
+    margin: auto;
+    padding: 30px;
+}
+
 
 .product-card {
     border: 1px solid #ddd;
@@ -97,12 +119,11 @@ body {
 }
 
 #post-form {
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #525257;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     width: 50%;
-    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,11 +131,14 @@ body {
 
 textarea, input[type="file"] {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 6px;
     outline: none;
     margin-top: 10px;
+    background: #523c58;
+    color: white;
+    border: 1px solid #39093d;
 }
 
 #feed {
@@ -124,13 +148,106 @@ textarea, input[type="file"] {
     width: 50%;
 }
 
+/* Contenedor de estadísticas y personas sugeridas */
+.stats-suggestions-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.stats, .suggested-friends {
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+    padding: 15px;
+    background: #525257;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.stats h3, .suggested-friends h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.stats p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #ddd;
+}
+
+/* Estilo de la sección de tendencias */
+.trending-section {
+    background: #525257;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.trending-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.trending-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.trending-section li {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #ddd;
+}
+
+/* Estilos para la sección de personas sugeridas */
+.suggested-friends .friend {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    background: #525257;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.suggested-friends img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.suggested-friends p {
+    flex-grow: 1;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.suggested-friends button {
+    background-color: #551a6a;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.suggested-friends button:hover {
+    background-color: #6b237d;
+}
+
+/*
 .post {
     background: white;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
+*/
 .notification {
     background: white;
     padding: 15px;
@@ -156,4 +273,60 @@ textarea, input[type="file"] {
 .notification span {
     font-size: 12px;
     color: gray;
+}
+.titulo-principal {
+    color: #551a6a;
+    text-align: center;
+    font-size: 28px;
+}
+
+.titulo-seccion {
+    color: #333;
+    font-size: 24px;
+    border-bottom: 2px solid #551a6a;
+    padding-bottom: 5px;
+}
+/* Contenedor principal de estadísticas */
+.stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    padding: 20px;
+    background: #2C2F33;
+    border-radius: 12px;
+}
+
+/* Caja de cada estadística */
+.stat-box {
+    background: #39093d;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s ease;
+    color: white;
+    border: 1px solid #551a6a;
+}
+
+/* Efecto hover */
+.stat-box:hover {
+    transform: scale(1.05);
+    background: #551a6a;
+}
+
+/* Título de cada estadística */
+.stat-box h3 {
+    color: #f1f1f1;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Valor de cada estadística */
+.stat-box p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ddd;
 }

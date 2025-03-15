@@ -24,5 +24,32 @@ document.getElementById("search-bar").addEventListener("input", function() {
         product.style.display = name.includes(filter) ? "block" : "none";
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("Documento cargado completamente.");
+
+    // Seleccionamos todos los botones dentro de .suggested-friends
+    const friendButtons = document.querySelectorAll('.suggested-friends button');
+
+    console.log("Botones encontrados:", friendButtons.length);
+
+    friendButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            // Buscamos el elemento <p> dentro del contenedor padre (.friend)
+            let friendNameElem = this.parentElement.querySelector('p');
+            if (friendNameElem) {
+                let friendName = friendNameElem.textContent.trim();
+                console.log(`Botón presionado para agregar a: ${friendName}`);
+                alert(`Has agregado a ${friendName} como amigo.`);
+            } else {
+                console.log("No se encontró el nombre del amigo.");
+            }
+        });
+    });
+});
+
+  
+
+
+
 
 

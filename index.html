@@ -7,11 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-
-
-
 <body>
-
 
     <!-- barra izquierda-->
     <div class="sidebar">
@@ -22,9 +18,7 @@
         <a href="perfil.html">Perfil</a>
         <a href="amigos.html">Amigos</a>
         <a href="marketplace.html">Marketplace</a>
-        
     </div>
-
 
     <!-- barra derecha-->
     <div class="sidebar-right">
@@ -32,8 +26,17 @@
         <a href="cumple.html">Cumpleaños</a>
         <a href="notificaciones.html">Notificaciones</a>
         <a href="mensajes.html">Mensajes</a>
-    </div>
 
+        <!-- Sección de tendencias -->
+        <div class="trending-section">
+            <h3>Tendencias</h3>
+            <ul>
+                <li>#InnovaciónTech</li>
+                <li>#NexusComunidad</li>
+                <li>#DesarrolloWeb</li>
+            </ul>
+        </div>
+    </div>
 
     <div class="container">
         <div id="post-form">
@@ -41,17 +44,35 @@
             <input type="file" id="image-upload">
             <button onclick="addPost()">Publicar</button>
         </div>
-        <div id="feed"></div>
-    </div>
 
+        <div id="feed"></div>
+
+        <!-- Contenedor de estadísticas y personas sugeridas -->
+        <div class="stats-suggestions-container">
+            <div class="stats">
+                <h3>Estadísticas</h3>
+                <p>Publicaciones hoy: <span id="post-count">0</span></p>
+                <p>Usuarios activos: <span id="active-users">345</span></p>
+            </div>
+
+            <div class="suggested-friends">
+                <h3>Personas Sugeridas</h3>
+                <div class="friend">
+                    <img src="assest/friend1.png" alt="Usuario 1">
+                    <p>Juan Pérez</p>
+                    <button>Agregar</button>
+                </div>
+                <div class="friend">
+                    <img src="assest/friend3.png" alt="Usuario 2">
+                    <p>María Gómez</p>
+                    <button>Agregar</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
     <script src="js/script.js"></script>
 
-
-
 </body>
-
-
-
-
 </html>
