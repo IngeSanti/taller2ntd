@@ -1,18 +1,22 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #2C2F33;
+    background: linear-gradient(to right, #1e1e2e, #2C2F33);
     margin: 0;
     padding: 0;
     display: flex;
+    color: white;
 }
 
 .sidebar, .sidebar-right {
-    width: 250px;
+    width: 220px;
     background-color: #39093d;
     color: white;
     position: fixed;
     height: 100%;
-    padding-top: 20px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sidebar {
@@ -26,19 +30,37 @@ body {
 
 .sidebar h2, .sidebar-right h2 {
     text-align: center;
+    margin-bottom: 15px;
+    font-size: 22px;
 }
+
 
 .sidebar a, .sidebar-right a {
     display: block;
     color: white;
-    padding: 10px;
+    padding: 12px;
     text-decoration: none;
-    margin: 5px;
+    margin: 5px 0;
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+    transition: background 0.3s;
 }
 
 .sidebar a:hover, .sidebar-right a:hover {
-    background-color: #39093d;
+    background-color: #551a6a;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 460px);
+    margin: auto;
+    padding: 30px;
+}
+
 
 .product-card {
     border: 1px solid #ddd;
@@ -97,12 +119,11 @@ body {
 }
 
 #post-form {
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #22222e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     width: 50%;
-    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,11 +131,14 @@ body {
 
 textarea, input[type="file"] {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 6px;
     outline: none;
     margin-top: 10px;
+    background: #523c58;
+    color: white;
+    border: 1px solid #39093d;
 }
 
 #feed {
@@ -123,14 +147,14 @@ textarea, input[type="file"] {
     gap: 10px;
     width: 50%;
 }
-
+/*
 .post {
     background: white;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
+*/
 .notification {
     background: white;
     padding: 15px;
