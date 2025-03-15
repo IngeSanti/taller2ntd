@@ -1,11 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mensajes</title>
+    <link rel="stylesheet" href="messages.css">
 </head>
 <body>
-    
+
+    <div class="messages-container">
+        <!-- Lista de chats -->
+        <div class="chat-list">
+            <h2>Chats</h2>
+            <div class="chat">
+                <img src="user1.jpg" alt="Usuario 1">
+                <div class="chat-info">
+                    <p class="chat-name">Usuario 1</p>
+                    <p class="chat-last-msg">Hola, ¿cómo estás?</p>
+                </div>
+            </div>
+
+            <div class="chat">
+                <img src="user2.jpg" alt="Usuario 2">
+                <div class="chat-info">
+                    <p class="chat-name">Usuario 2</p>
+                    <p class="chat-last-msg">Nos vemos luego</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Área de conversación -->
+        <div class="chat-box">
+            <div class="chat-header">
+                <h3>Usuario 1</h3>
+            </div>
+            <div class="chat-messages">
+                <div class="message received">Hola, ¿cómo estás?</div>
+                <div class="message sent">¡Hola! Todo bien, ¿y tú?</div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Escribe un mensaje...">
+                <button>Enviar</button>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
